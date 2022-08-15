@@ -3,8 +3,7 @@
 import pygame, sys
 from settings import Settings
 from level import Level
-from player import Player
-from platform import Borders
+
 from pygame import mixer
 
 class JumpDead():
@@ -15,7 +14,6 @@ class JumpDead():
             self.screen = pygame.display.set_mode((Settings.window['width'], Settings.window['height']))
             self.clock = pygame.time.Clock()
             self.level = Level()
-            self.player = Player()
             self.volume = 0.5
 
             
